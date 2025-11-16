@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="flipkart.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Flipkart</div>
+        <input type="text" placeholder="Search for products, brands and more..." class="search-box">
+        <button class="cart-btn" onclick="toggleCart()">Cart (<span id="cart-count">0</span>)</button>
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Mobiles</li>
+            <li>Electronics</li>
+            <li>Fashion</li>
+            <li>Beauty</li>
+            <li>Furniture</li>
+            <li>2 Wheeler</li>
+            <li>TV'S & Appliances</li>
+            <li>Grocery</li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Top Offers</h2>
+        <div class="products" id="product-list">
+            <!-- Product cards will be injected by JS -->
+        </div>
+    </main>
+    <div id="cart" class="cart-popup">
+        <h3>Shopping Cart</h3>
+        <ul id="cart-items"></ul>
+        <button onclick="toggleCart()">Close</button>
+    </div>
+    <script src="flipkart.js"></script>
+</body>
+
+</html>
